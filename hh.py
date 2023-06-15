@@ -77,7 +77,7 @@ class HHJobPlatform(AbstractJobPlatform, ABC):
 
     def file_vacancy(self, jobs):
         """Запись словаря в JSON-файл"""
-        with open('vacancy_hh.json', 'w', encoding='utf-8') as f:
+        with open('vacancy_hh.json', 'a', encoding='utf-8') as f:
             json.dump(jobs, f, sort_keys=False, indent=4, ensure_ascii=False)
 
 
