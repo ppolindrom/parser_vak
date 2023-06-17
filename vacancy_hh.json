@@ -1,127 +1,82 @@
-{
-    "title": "Младший аналитик (IT)",
-    "link": "https://hh.ru/vacancy/81567192",
-    "salary_min": 100000,
-    "salary_max": 140000,
-    "description": "Опыт работы в данной сфере необязателен. Перед трудоустройством проводится подготовка. Приветствуются базовые знания SQL, Java, <highlighttext>Python</highlighttext>, C#, JavaScript, PHP."
-}{
-    "title": "Frontend-разработчик",
-    "link": "https://hh.ru/vacancy/81910657",
-    "salary_min": 70000,
-    "salary_max": null,
-    "description": "Знание JavaScript (ES6, node, webpack, Lodash, Moment.js, jQuery), HTML5, CSS3, <highlighttext>Python</highlighttext>, React, TypeScript, SCSS Modules. - "
-}{
-    "title": "Аналитик данных",
-    "link": "https://hh.ru/vacancy/81243565",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Знание основ Data Science (<highlighttext>python</highlighttext>, pandas, numpy). Умение держать фокус на результат и внимание к мелочам. Рассматриваем кандидатов и без..."
-}{
-    "title": "Python Junior Developer",
-    "link": "https://hh.ru/vacancy/81857617",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Умение читать чужой код. Знание кора <highlighttext>Python</highlighttext>, понимание работы асинхронного кода (здорово, если есть коммерческий опыт разработки на асинхронном стэке). "
-}{
-    "title": "Frontend разработчик (react)",
-    "link": "https://hh.ru/vacancy/81860266",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Имеете высшее техническое образование. Имеете опыт работы в роли JavaScript-разработчиком от 2-х лет. Имеете опыт создания проектов на..."
-}{
-    "title": "Chief Technology Officer/CTO",
-    "link": "https://hh.ru/vacancy/78157311",
-    "salary_min": 800000,
-    "salary_max": 1200000,
-    "description": "Образование – высшее. Опыт работы в крупнейших мировых IT компаниях ( Google, Facebook, Microsoft, Amazon, Авито, Озон). Опыт работы в должности – более..."
-}{
-    "title": "Специалист по тестированию (QA)",
-    "link": "https://hh.ru/vacancy/80534188",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Автоматизация тестирования (Gitlab CI, Teamcity). Базовые навыки программирования на <highlighttext>Python</highlighttext>/PHP/JavaScript. Понимание принципов работы компьютерных сетей и основных протоколов. "
-}{
-    "title": "Junior разработчик Python/Стажер",
-    "link": "https://hh.ru/vacancy/81549878",
-    "salary_min": 50000,
-    "salary_max": null,
-    "description": "Высокий уровень самоорганизованности и дисциплины. Наличие ПК, ноутбука, и высокоскоростного интернета. Обязателен опыт работы над коммерческим или опен-сорс проектом..."
-}{
-    "title": "Jun+ Python разработчик (Remote)",
-    "link": "https://hh.ru/vacancy/81764147",
-    "salary_min": null,
-    "salary_max": 135000,
-    "description": "Хорошее знание фреймворков Django, FastAPI. ⁃ Хорошее знание SQL. ⁃ Понимание принципов ООП (SOLID, DRY, KISS). ⁃ Уверенный уровень владения Git и командной..."
-}{
-    "title": "Стажер-разработчик",
-    "link": "https://hh.ru/vacancy/81367910",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Высшее образование (программирование). Знание программ Java, <highlighttext>Python</highlighttext>, C++."
-}{
-    "title": "Младший аналитик (IT)",
-    "link": "https://hh.ru/vacancy/81567192",
-    "salary_min": 100000,
-    "salary_max": 140000,
-    "description": "Опыт работы в данной сфере необязателен. Перед трудоустройством проводится подготовка. Приветствуются базовые знания SQL, Java, <highlighttext>Python</highlighttext>, C#, JavaScript, PHP."
-}{
-    "title": "Программист-стажер WEB приложений",
-    "link": "https://hh.ru/vacancy/81942237",
-    "salary_min": 50000,
-    "salary_max": null,
-    "description": "Знания одного из языков программирования: Perl, <highlighttext>Python</highlighttext>, Ruby, PHP. Умение построения SQL запросов под одну из СУБД: Oracle, MySQL, PostgreSQL..."
-}{
-    "title": "QA Engineer",
-    "link": "https://hh.ru/vacancy/81947170",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Уверенное владение командной строкой Linux (Unix). - Языки програмирования: <highlighttext>python</highlighttext>3 (<highlighttext>python</highlighttext>2), bash (posix shell). - Опыт работы с различными дистрибутивами..."
-}{
-    "title": "Аналитик данных",
-    "link": "https://hh.ru/vacancy/81243565",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Знание основ Data Science (<highlighttext>python</highlighttext>, pandas, numpy). Умение держать фокус на результат и внимание к мелочам. Рассматриваем кандидатов и без..."
-}{
-    "title": "Frontend-разработчик",
-    "link": "https://hh.ru/vacancy/81910657",
-    "salary_min": 70000,
-    "salary_max": null,
-    "description": "Знание JavaScript (ES6, node, webpack, Lodash, Moment.js, jQuery), HTML5, CSS3, <highlighttext>Python</highlighttext>, React, TypeScript, SCSS Modules. - "
-}{
-    "title": "Python Junior Developer",
-    "link": "https://hh.ru/vacancy/81857617",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Умение читать чужой код. Знание кора <highlighttext>Python</highlighttext>, понимание работы асинхронного кода (здорово, если есть коммерческий опыт разработки на асинхронном стэке). "
-}{
-    "title": "Chief Technology Officer/CTO",
-    "link": "https://hh.ru/vacancy/78157311",
-    "salary_min": 800000,
-    "salary_max": 1200000,
-    "description": "Образование – высшее. Опыт работы в крупнейших мировых IT компаниях ( Google, Facebook, Microsoft, Amazon, Авито, Озон). Опыт работы в должности – более..."
-}{
-    "title": "Junior разработчик Python/Стажер",
-    "link": "https://hh.ru/vacancy/81549878",
-    "salary_min": 50000,
-    "salary_max": null,
-    "description": "Высокий уровень самоорганизованности и дисциплины. Наличие ПК, ноутбука, и высокоскоростного интернета. Обязателен опыт работы над коммерческим или опен-сорс проектом..."
-}{
-    "title": "Младший аналитик (IT)",
-    "link": "https://hh.ru/vacancy/81567192",
-    "salary_min": 100000,
-    "salary_max": 140000,
-    "description": "Опыт работы в данной сфере необязателен. Перед трудоустройством проводится подготовка. Приветствуются базовые знания SQL, Java, <highlighttext>Python</highlighttext>, C#, JavaScript, PHP."
-}{
-    "title": "Специалист по тестированию (QA)",
-    "link": "https://hh.ru/vacancy/80534188",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Автоматизация тестирования (Gitlab CI, Teamcity). Базовые навыки программирования на <highlighttext>Python</highlighttext>/PHP/JavaScript. Понимание принципов работы компьютерных сетей и основных протоколов. "
-}{
-    "title": "Frontend разработчик (react)",
-    "link": "https://hh.ru/vacancy/81860266",
-    "salary_min": null,
-    "salary_max": null,
-    "description": "Имеете высшее техническое образование. Имеете опыт работы в роли JavaScript-разработчиком от 2-х лет. Имеете опыт создания проектов на..."
-}
+[
+    {
+        "id": "82003774",
+        "title": "Инженер по тестированию ПО",
+        "link": "https://hh.ru/vacancy/82003774",
+        "salary_min": 80000,
+        "salary_max": null,
+        "description": "Опыт технической поддержки или системного администрирования. Познания в Linux тестировании в теории или на практике будут не лишними. "
+    },
+    {
+        "id": "81559931",
+        "title": "QA специалист (junior+)",
+        "link": "https://hh.ru/vacancy/81559931",
+        "salary_min": null,
+        "salary_max": null,
+        "description": "Опыт работы в тестировании. Умение работать с консолью браузера, знание принципов работы клиент-сервер. *Будет плюсом опыт работы с Selenium+Python..."
+    },
+    {
+        "id": "82054624",
+        "title": "Backend - разработчик на Python",
+        "link": "https://hh.ru/vacancy/82054624",
+        "salary_min": null,
+        "salary_max": null,
+        "description": "Опыт в написании телеграм-ботов. Опыт коммерческой разработки на <highlighttext>Python</highlighttext> от 1 года. Умение адекватно оценивать трудоёмкость и сроки, соблюдать..."
+    },
+    {
+        "id": "81243565",
+        "title": "Аналитик данных",
+        "link": "https://hh.ru/vacancy/81243565",
+        "salary_min": null,
+        "salary_max": null,
+        "description": "Знание основ Data Science (<highlighttext>python</highlighttext>, pandas, numpy). Умение держать фокус на результат и внимание к мелочам. Рассматриваем кандидатов и без..."
+    },
+    {
+        "id": "81942237",
+        "title": "Программист-стажер WEB приложений",
+        "link": "https://hh.ru/vacancy/81942237",
+        "salary_min": 50000,
+        "salary_max": null,
+        "description": "Знания одного из языков программирования: Perl, <highlighttext>Python</highlighttext>, Ruby, PHP. Умение построения SQL запросов под одну из СУБД: Oracle, MySQL, PostgreSQL..."
+    },
+    {
+        "id": "81977442",
+        "title": "Программист Python",
+        "link": "https://hh.ru/vacancy/81977442",
+        "salary_min": null,
+        "salary_max": null,
+        "description": "Алексеева). Владение языком программирования <highlighttext>Python</highlighttext> на уровне Junior/Middle. Владение библиотеками Numpy, Scipy, Matplotlib и им подобным. Автоматизация Excel-таблиц. "
+    },
+    {
+        "id": "81606777",
+        "title": "Тестировщик ПО (процессинг платежей)",
+        "link": "https://hh.ru/vacancy/81606777",
+        "salary_min": null,
+        "salary_max": null,
+        "description": "Опыт разработки функционально – интеграционных сервисов на языках Java, <highlighttext>Python</highlighttext>. Хорошие знания в части микросервисной архитектуры. Опыт работы с такими сервисами..."
+    },
+    {
+        "id": "78157311",
+        "title": "Chief Technology Officer/CTO",
+        "link": "https://hh.ru/vacancy/78157311",
+        "salary_min": 800000,
+        "salary_max": 1200000,
+        "description": "Образование – высшее. Опыт работы в крупнейших мировых IT компаниях ( Google, Facebook, Microsoft, Amazon, Авито, Озон). Опыт работы в должности – более..."
+    },
+    {
+        "id": "82030362",
+        "title": "Фронтенд разработчик на Javascript",
+        "link": "https://hh.ru/vacancy/82030362",
+        "salary_min": null,
+        "salary_max": 150000,
+        "description": "...и других сборщиков, npm/yarn, typescript и т.п.). Опыт работы с Docker, Gitlab CI/CD. Базовые знания <highlighttext>Python</highlighttext> (backend)."
+    },
+    {
+        "id": "81977478",
+        "title": "Тестировщик (ЗОО)",
+        "link": "https://hh.ru/vacancy/81977478",
+        "salary_min": null,
+        "salary_max": null,
+        "description": "Имеет опыт участия в средних и крупных проектах интеграции различных систем. Понимает виды и принципы межсистемного взаимодействия (клиент-сервер, общая..."
+    }
+]
