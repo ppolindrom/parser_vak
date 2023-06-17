@@ -45,8 +45,9 @@ class HHJobPlatform(AbstractJobPlatform, ABC):
         """Создание словаря вакансий"""
         if self.server_connection().status_code == 200:
             data = self.server_connection().json()
-            jobs = {}
+            list_job = []
             for item in data['items']:
+                id_vac = item['id']
                 title = item['name']
                 link = item['alternate_url']
 
@@ -62,23 +63,24 @@ class HHJobPlatform(AbstractJobPlatform, ABC):
                     'snippet'] else None
 
                 jobs = {
+                    'id': id_vac,
                     'title': title,
                     'link': link,
                     'salary_min': salary_min,
                     'salary_max': salary_max,
                     'description': description
                 }
-                print(jobs)
-                self.file_vacancy(jobs)
-            return jobs
+                list_job.append(jobs)
+            self.file_vacancy(list_job)
+            return list_job
 
         else:
             print(f"Request failed with status code: {self.server_connection().status_code}")
 
-    def file_vacancy(self, jobs):
+    def file_vacancy(self, list_jobs):
         """Запись словаря в JSON-файл"""
-        with open('vacancy_hh.json', 'a', encoding='utf-8') as f:
-            json.dump(jobs, f, sort_keys=False, indent=4, ensure_ascii=False)
+        with open('vacancy_hh.json', 'w', encoding='utf-8') as f:
+            json.dump(list_jobs, f, sort_keys=False, indent=4, ensure_ascii=False)
 
 
 ex = HHJobPlatform('python')
