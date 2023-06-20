@@ -6,32 +6,18 @@ from abstract_class import AbstractJobPlatform
 
 class HHJobPlatform(AbstractJobPlatform, ABC):
 
-    def __init__(self, keyword):
-        self.keyword = keyword
-        self.salary_min = None
+    def __init__(self, keyword, count_vacancy):
+        self.count_vacancy = count_vacancy # количество вакансий нужных пользователю
+        self.keyword = keyword # тег для поиска вакансии
+        self.salary_min = None # минимальная зарплата
 
-    def __gt__(self, other):
-        return int(self.salary_min) > int(other.salary_min)
-
-    def __ge__(self, other):
-        return int(self.salary_min) >= int(other.salary_min)
-
-    def __lt__(self, other):
-        return int(self.salary_min) < int(other.salary_min)
-
-    def __le__(self, other):
-        return int(self.salary_min) <= int(other.salary_min)
-
-    def __eq__(self, other):
-        return int(self.salary_min) == int(other.salary_min)
 
     def server_connection(self, params=None):
         """Подключение к API hh.ru"""
 
         url = 'https://api.hh.ru/vacancies'
-        params = {'text': self.keyword,  # Ключевое слово для поиска ваканчий
-                  'area': 1,  # Индекс города для поиска 1(Москва)
-                  "per_page": 10  # Кол-во вакансий на странице
+        params = {'text': self.keyword,  # тег для поиска вакансий
+                  "per_page": 10  # колличество вакансий на странице
                   }
         headers = {
             "User-Agent": "50355527",  # Replace with your User-Agent header
@@ -81,7 +67,3 @@ class HHJobPlatform(AbstractJobPlatform, ABC):
         """Запись словаря в JSON-файл"""
         with open('vacancy_hh.json', 'w', encoding='utf-8') as f:
             json.dump(list_jobs, f, sort_keys=False, indent=4, ensure_ascii=False)
-
-
-ex = HHJobPlatform('python')
-ex.job_dictionary()
