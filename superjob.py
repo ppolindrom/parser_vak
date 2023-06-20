@@ -1,7 +1,5 @@
 import json
-import os
 from abc import ABC
-from pprint import pprint
 
 import requests
 from abstract_class import AbstractJobPlatform
@@ -13,26 +11,11 @@ class SuperJobPlatform(AbstractJobPlatform, ABC):
         self.keyword = keyword
         self.salary_min = None
 
-    def __gt__(self, other):
-        return int(self.salary_min) > int(other.salary_min)
-
-    def __ge__(self, other):
-        return int(self.salary_min) >= int(other.salary_min)
-
-    def __lt__(self, other):
-        return int(self.salary_min) < int(other.salary_min)
-
-    def __le__(self, other):
-        return int(self.salary_min) <= int(other.salary_min)
-
-    def __eq__(self, other):
-        return int(self.salary_min) == int(other.salary_min)
-
     def server_connection(self):
         """Подключение к API sj.ru"""
         headers = {
             'Host': 'api.superjob.ru',
-            'X-Api-App-Id': os.getenv('API_KEY'),
+            'X-Api-App-Id': 'v3.r.137621073.4b760f4eda8bad2460b645c40f21ad7f8a883a89.68b12c133699de440c85cd6c234250d172225eee',
             'Authorization': 'Bearer r.000000010000001.example.access_token',
             'Content-Type': 'application/x-www-form-urlencoded'
         }
@@ -77,9 +60,3 @@ class SuperJobPlatform(AbstractJobPlatform, ABC):
         """Запись словаря в JSON-файл"""
         with open('vacancy_sj.json', 'w', encoding='utf-8') as json_file:
             json.dump(jobs, json_file, sort_keys=False, indent=4, ensure_ascii=False)
-
-
-ads = SuperJobPlatform('')
-pprint(ads.job_dictionary())
-print(ads.server_connection())
-
