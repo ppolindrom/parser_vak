@@ -1,0 +1,42 @@
+[
+    {
+        "id": "81957429",
+        "title": "Инженер-программист АСУ ТП",
+        "link": "https://hh.ru/vacancy/81957429",
+        "salary_min": 100000,
+        "salary_max": null,
+        "description": "...принципов работы сетевого оборудования. Знание промышленных протоколов передачи данных. Навыки работы с СУБД. Знание языков программирования C++, C#, VB, <highlighttext>Python</highlighttext>."
+    },
+    {
+        "id": "81901119",
+        "title": "Руководитель направления по анализу производственных данных",
+        "link": "https://hh.ru/vacancy/81901119",
+        "salary_min": null,
+        "salary_max": null,
+        "description": "Неограниченный доступ к образовательному контенту на портале знаний от корпоративного университета."
+    },
+    {
+        "id": "81771206",
+        "title": "Руководитель направления по внедрению ИТ-технологий",
+        "link": "https://hh.ru/vacancy/81771206",
+        "salary_min": null,
+        "salary_max": null,
+        "description": "Навыки программирования и владение одним из языков программирования высокого уровня будет плюсом (С++, <highlighttext>Python</highlighttext>, C#, Java). Навыки верстки (html / css..."
+    },
+    {
+        "id": "81426656",
+        "title": "Руководитель направления по анализу и интеграции производственных данных",
+        "link": "https://hh.ru/vacancy/81426656",
+        "salary_min": null,
+        "salary_max": null,
+        "description": "Знаешь программные продукты MS Office,QlikView на уровне опытного пользователя. Знаешь VBA, <highlighttext>Python</highlighttext>, Oracle, PostgreSQL, MS SQL, JavaScript и/или..."
+    },
+    {
+        "id": "81841840",
+        "title": "IT-наставник для детей по программированию",
+        "link": "https://hh.ru/vacancy/81841840",
+        "salary_min": null,
+        "salary_max": null,
+        "description": null
+    }
+]
