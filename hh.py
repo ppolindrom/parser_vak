@@ -5,19 +5,18 @@ from abstract_class import AbstractJobPlatform
 
 
 class HHJobPlatform(AbstractJobPlatform, ABC):
-
+    """класс для работы с сайтом HH.ru"""
     def __init__(self, keyword, count_vacancy):
-        self.count_vacancy = count_vacancy # количество вакансий нужных пользователю
-        self.keyword = keyword # тег для поиска вакансии
-        self.salary_min = None # минимальная зарплата
-
+        self.count_vacancy = count_vacancy  # количество вакансий нужных пользователю
+        self.keyword = keyword  # тег для поиска вакансии
+        self.salary_min = None  # минимальная зарплата
 
     def server_connection(self, params=None):
-        """Подключение к API hh.ru"""
+        """подключение к API hh.ru"""
 
         url = 'https://api.hh.ru/vacancies'
         params = {'text': self.keyword,  # тег для поиска вакансий
-                  "per_page": 10  # колличество вакансий на странице
+                  "per_page": self.count_vacancy  # колличество вакансий на странице
                   }
         headers = {
             "User-Agent": "50355527",  # Replace with your User-Agent header

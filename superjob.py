@@ -1,4 +1,5 @@
 import json
+import os
 from abc import ABC
 
 import requests
@@ -6,8 +7,10 @@ from abstract_class import AbstractJobPlatform
 
 
 class SuperJobPlatform(AbstractJobPlatform, ABC):
+    """класс для работы с сайтом SuperJob"""
 
-    def __init__(self, keyword):
+    def __init__(self, keyword, count_vacancy):
+        self.count_vacancy = count_vacancy
         self.keyword = keyword
         self.salary_min = None
 
@@ -15,11 +18,11 @@ class SuperJobPlatform(AbstractJobPlatform, ABC):
         """Подключение к API sj.ru"""
         headers = {
             'Host': 'api.superjob.ru',
-            'X-Api-App-Id': 'v3.r.137621073.4b760f4eda8bad2460b645c40f21ad7f8a883a89.68b12c133699de440c85cd6c234250d172225eee',
+            'X-Api-App-Id': os.getenv('API_KEY'),
             'Authorization': 'Bearer r.000000010000001.example.access_token',
             'Content-Type': 'application/x-www-form-urlencoded'
         }
-        params = {"count": 10, "page": None,
+        params = {"count": self.count_vacancy, "page": None,
                   "keyword": self.keyword, "archive": False, }
         data = requests.get('https://api.superjob.ru/2.0/vacancies/', headers=headers, params=params)
         return data
@@ -43,7 +46,7 @@ class SuperJobPlatform(AbstractJobPlatform, ABC):
 
                 description = item['candidat']
                 id_vacancy = item['id']
-
+                #  Создание словаря из вакансий
                 jobs = {
                     'id': id_vacancy,
                     'title': title,
@@ -55,6 +58,9 @@ class SuperJobPlatform(AbstractJobPlatform, ABC):
                 list_job.append(jobs)
             self.file_vacancy(list_job)
             return list_job
+
+        else:
+            print(f"Проблема с сетью: {self.server_connection().status_code}")
 
     def file_vacancy(self, jobs):
         """Запись словаря в JSON-файл"""
