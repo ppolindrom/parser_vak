@@ -1,7 +1,8 @@
 from utils import hh_func, sj_func
 
+
 def main():
-    """Основная функция программы"""
+    """Основная функция для запуска программы"""
     print('Привет! Я могу помочь найти тебе работу.')
 
     while True:
@@ -26,11 +27,16 @@ def main():
 
         while True:
             count_vacancy = input('Сколько ваканcий тебе показать?\n')
-            if int(count_vacancy) <= 1:
-                print("Введи, пожалуйста, больше чем одну вакансию")
+            try:
+                if int(count_vacancy) > 1:
+                    break
+                else:
+                    print("Нужно указать больше одной вакансии!")
                 continue
-            else:
-                break
+
+            except ValueError:
+                print("Вы ничего не вводите")
+                continue
 
         while True:
             city = input('В каком городе?\n')
